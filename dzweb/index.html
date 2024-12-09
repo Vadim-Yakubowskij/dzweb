@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Слайдер</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active" style="background-image: url('image2.jpg');">
+                <div class="text">Слайд 1: Добро пожаловать на наш сайт! 🌍</div>
+            </div>
+            <div class="slide" style="background-image: url('image2.jpg');">
+                <div class="text">Слайд 2: У нас лучшие предложения! 💼</div>
+            </div>
+            <div class="slide" style="background-image: url('image2.jpg');">
+                <div class="text">Слайд 3: Специальные акции! 🎉</div>
+            </div>
+            <div class="slide" style="background-image: url('image2.jpg');">
+                <div class="text">Слайд 4: Свяжитесь с нами! 📞</div>
+            </div>
+            <div class="slide" style="background-image: url('image2.jpg');">
+                <div class="text">Слайд 5: Мы заботимся о вас! ❤️</div>
+            </div>
+            <div class="slide" style="background-image: url('image2.jpg');">
+                <div class="text">Слайд 6: Спасибо за посещение! 🙏</div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+            <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+        </div>
+        <div class="indicators">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
